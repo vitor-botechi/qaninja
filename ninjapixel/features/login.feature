@@ -8,13 +8,13 @@ Funcionalidade: Login
     Contexto:
         Dado que acesso a página principal
 
-@login_happy
+@login_happy @smoke
 Cenario: Acessar o portal
 
     Quando eu submeto minhas credenciais "papito@ninjapixel.com" e "pwd123"
     Então devo ser autenticado
 
-@login_attempt
+@login_attempts @smoke
 Esquema do Cenario: Tentar logar
 
     Quando eu submeto minhas credenciais "<email>" e "<senha>"
