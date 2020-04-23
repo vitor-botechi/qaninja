@@ -1,4 +1,5 @@
 # Funcionalidade: Login
+# "Traduzem" o login.feature
 Dado("que acesso a página principal") do
     @login_page.go
 end
