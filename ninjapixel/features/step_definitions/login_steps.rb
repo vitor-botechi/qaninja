@@ -9,7 +9,7 @@ Quando("eu submeto minhas credenciais {string} e {string}") do |email, password|
 end
 
 Então("devo ser autenticado") do
-    expect(@side.logged_user).to eql "Papito"
+    expect(@side.logged_user).to eql "eu@papito.io" # Expect que força o erro propositalmente (para falhar no log)
 end
 
 Então("devo ver uma mensagem de alerta {string}") do |expected_alert|
